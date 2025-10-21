@@ -13,3 +13,5 @@ if settings.startup["IR3-lab-selection"].value == "quantum lab 5x5" then
     require("prototypes/entity/quantum-lab")
     require("prototypes/item/quantum-lab")
 end
+
+require("prototypes/technology/research-speed")
