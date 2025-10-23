@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 20.10.2025
+  Bugfixes:
+    - None
+  Changes:
+    - When Space Age is active, the biolab is reskinned as quantum lab
+  Features:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 20.10.2025
   Bugfixes:
@@ -6,7 +15,7 @@ Date: 20.10.2025
   Changes:
     - Updated the Research speed 1-6 technology icons
   Features:
-    - Initial release
+    - None
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 19.10.2025

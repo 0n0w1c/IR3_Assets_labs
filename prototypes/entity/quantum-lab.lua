@@ -1,5 +1,9 @@
 local entity = data.raw["lab"]["lab"]
 
+if mods["space-age"] then
+    entity = data.raw["lab"]["biolab"]
+end
+
 entity.icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/quantum-lab.png"
 entity.collision_box = { { -3.25, -3.25 }, { 3.25, 3.25 } }
 entity.selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } }

@@ -1,6 +1,7 @@
-local hidden = true
+local hidden = false
+
 if mods["space-age"] then
-    hidden = false
+    hidden = true
 end
 
 data:extend({
