@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.5
+Date: 24.10.2025
+  Bugfixes:
+    - Refactored the Lab Research Speed technology icon assignment
+  Changes:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.0.4
 Date: 24.10.2025
   Bugfixes:
@@ -19,7 +26,7 @@ Date: 20.10.2025
   Bugfixes:
     - None
   Changes:
-    - Updated the Research speed 1-6 technology icons
+    - Updated the Lab Research Speed 1-6 technology icons
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 19.10.2025

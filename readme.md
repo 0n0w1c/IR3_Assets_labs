@@ -12,7 +12,7 @@ For licensing concerns: [FAQ](https://mods.factorio.com/mod/IR3_Assets_assemblin
 
 See the mod [IR3 Assets: Some assembly required](https://mods.factorio.com/mod/IR3_Assets_some_assembly_required)
 
-*Startup setting to select either lab (3x3) or quantum lab (5x5)*
+*Startup setting to select either lab or quantum lab*
 
 With Space Age:
 *Startup setting to select if Biolab is reskinned as quantum lab*

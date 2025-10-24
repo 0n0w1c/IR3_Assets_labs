@@ -1,18 +1,13 @@
-local technologies = data.raw["technology"]
-local icon
+local icon = "__IndustrialRevolution3Assets1__/graphics/icons/256/electric-lab.png"
 
-if not mods["space-age"] then
-    if settings.startup["IR3-lab-style"].value == "quantum lab" then
-        icon = "__IndustrialRevolution3Assets1__/graphics/icons/256/quantum-lab.png"
-    else
-        icon = "__IndustrialRevolution3Assets1__/graphics/icons/256/electric-lab.png"
-    end
-else
-    icon = "__IndustrialRevolution3Assets1__/graphics/icons/256/electric-lab.png"
+if string.find(data.raw["lab"]["lab"].icon, "quantum") then
+    icon = "__IndustrialRevolution3Assets1__/graphics/icons/256/quantum-lab.png"
 end
 
-for i = 1, 6 do
-    technologies["research-speed-" .. i].icons = {
+local technologies = data.raw["technology"]
+
+for index = 1, 6 do
+    technologies["research-speed-" .. index].icons = {
         {
             icon = icon,
             icon_size = 256,
