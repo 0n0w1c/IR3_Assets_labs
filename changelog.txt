@@ -1,12 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 24.10.2025
+  Bugfixes:
+    - Correctly scale the quantum lab size to match the vanilla size
+  Changes:
+    - Added a startup option to reskin the biolab (default: enabled)
+    - Updated the thumbnail
+---------------------------------------------------------------------------------------------------
 Version: 0.0.3
-Date: 20.10.2025
+Date: 23.10.2025
   Bugfixes:
     - None
   Changes:
     - When Space Age is active, the biolab is reskinned as quantum lab
-  Features:
-    - None
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 20.10.2025
@@ -14,14 +20,10 @@ Date: 20.10.2025
     - None
   Changes:
     - Updated the Research speed 1-6 technology icons
-  Features:
-    - None
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 19.10.2025
   Bugfixes:
     - None
   Changes:
-    - None
-  Features:
     - Initial release

@@ -6,18 +6,20 @@ if not (mods["IndustrialRevolution3Assets1"]
     return
 end
 
-require("prototypes/entity/lab")
-require("prototypes/item/lab")
-
-if not mods["space-age"] then
-    if settings.startup["IR3-lab-selection"].value == "quantum lab 5x5" then
-        require("prototypes/entity/quantum-lab")
-        require("prototypes/item/quantum-lab")
-    end
-else
+if mods["space-age"] and settings.startup["IR3-reskin-biolab"].value == true then
+    require("prototypes/entity/lab")
+    require("prototypes/item/lab")
     require("prototypes/entity/quantum-lab")
     require("prototypes/item/quantum-lab")
     require("prototypes/technology/biolab")
+else
+    if settings.startup["IR3-lab-style"].value == "quantum lab" then
+        require("prototypes/entity/quantum-lab")
+        require("prototypes/item/quantum-lab")
+    else
+        require("prototypes/entity/lab")
+        require("prototypes/item/lab")
+    end
 end
 
 require("prototypes/technology/research-speed")

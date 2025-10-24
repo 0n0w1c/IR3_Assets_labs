@@ -14,6 +14,9 @@ See the mod [IR3 Assets: Some assembly required](https://mods.factorio.com/mod/I
 
 *Startup setting to select either lab (3x3) or quantum lab (5x5)*
 
+With Space Age:
+*Startup setting to select if Biolab is reskinned as quantum lab*
+
 If the IR3 Assets are not installed, this mod will do nothing.
 
 This mod does **not** include IR3 or the assets.  

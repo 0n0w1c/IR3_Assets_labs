@@ -1,16 +1,23 @@
-local hidden = false
+local hidden = true
 
 if mods["space-age"] then
-    hidden = true
+    hidden = false
 end
 
 data:extend({
     {
         type = "string-setting",
-        name = "IR3-lab-selection",
+        name = "IR3-lab-style",
         setting_type = "startup",
-        allowed_values = { "lab 3x3", "quantum lab 5x5" },
-        default_value = "lab 3x3",
+        allowed_values = { "lab", "quantum lab" },
+        default_value = "lab",
+        order = "a",
+    },
+    {
+        type = "bool-setting",
+        name = "IR3-reskin-biolab",
+        setting_type = "startup",
+        default_value = true,
         order = "a",
         hidden = hidden
     },

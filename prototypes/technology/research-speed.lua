@@ -2,7 +2,7 @@ local technologies = data.raw["technology"]
 local icon
 
 if not mods["space-age"] then
-    if settings.startup["IR3-lab-selection"].value == "quantum lab 5x5" then
+    if settings.startup["IR3-lab-style"].value == "quantum lab" then
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/256/quantum-lab.png"
     else
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/256/electric-lab.png"
