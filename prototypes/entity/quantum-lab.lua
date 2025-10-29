@@ -6,10 +6,121 @@ if mods["space-age"] and settings.startup["IR3-reskin-biolab"].value == true the
     SCALE = 5 / 7
 end
 
-entity.icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/quantum-lab.png"
+entity.icon                           = "__IndustrialRevolution3Assets1__/graphics/icons/64/quantum-lab.png"
 entity.drawing_box_vertical_extension = 1
 
-entity.off_animation = {
+entity.corpse                         = "medium-remnants"
+entity.dying_explosion                = "quantum-lab-explosion"
+
+entity.damaged_trigger_effect         = {
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.74,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "copper-particle",
+        probability = 0.023550078317742678,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.74,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "glass-particle",
+        probability = 0.0042987418078898436,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.74,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "gold-particle",
+        probability = 0.0084838149622056775,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.74,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "steel-particle",
+        probability = 0.025916453014874348,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.74,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            { -0.5, -0.5 },
+            { 0.5,  0.5 }
+        },
+        particle_name = "iron-particle",
+        probability = 0.010488516670692767,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    }
+}
+
+entity.off_animation                  = {
     layers = {
         {
             animation_speed = 0.5,
@@ -94,7 +205,7 @@ entity.off_animation = {
     }
 }
 
-entity.on_animation = {
+entity.on_animation                   = {
     layers = {
         {
             animation_speed = 0.5,
@@ -275,7 +386,7 @@ entity.on_animation = {
     }
 }
 
-entity.working_sound = {
+entity.working_sound                  = {
     fade_in_ticks = 10,
     fade_out_ticks = 30,
     max_sounds_per_type = 3,
