@@ -6,7 +6,7 @@ if not (mods["IndustrialRevolution3Assets1"]
     return
 end
 
-if mods["space-age"] and settings.startup["IR3-reskin-biolab"].value == true then
+if mods["space-age"] and settings.startup["IR3-reskin-biolab"].value then
     require("prototypes/explosion/lab")
     require("prototypes/entity/lab")
     require("prototypes/item/lab")
@@ -34,7 +34,7 @@ if mods["quality"] then
     if recipe then recycling.generate_recycling_recipe(recipe) end
 
     recipe = data.raw["recipe"]["biolab"]
-    if settings.startup["IR3-reskin-biolab"].value == true then
+    if settings.startup["IR3-reskin-biolab"].value then
         if recipe then
             recipe.icon = nil
             recipe.icon_size = nil

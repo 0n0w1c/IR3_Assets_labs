@@ -1,6 +1,6 @@
 local item = data.raw["item"]["lab"]
 
-if mods["space-age"] then
+if mods["space-age"]  and settings.startup["IR3-reskin-biolab"].value then
     item = data.raw["item"]["biolab"]
 end
 

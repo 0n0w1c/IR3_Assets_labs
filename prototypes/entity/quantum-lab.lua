@@ -1,7 +1,7 @@
 local entity = data.raw["lab"]["lab"]
 local SCALE = 3 / 7
 
-if mods["space-age"] and settings.startup["IR3-reskin-biolab"].value == true then
+if mods["space-age"] and settings.startup["IR3-reskin-biolab"].value then
     entity = data.raw["lab"]["biolab"]
     SCALE = 5 / 7
 end
