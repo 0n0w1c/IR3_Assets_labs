@@ -26,8 +26,8 @@ else
     end
 end
 
-if mods["quality"] then
-    local recycling = require("__quality__/prototypes/recycling")
+if mods["recycler"] then
+    local recycling = require("__recycler__.recycling")
     local recipe
 
     recipe = data.raw["recipe"]["lab"]
